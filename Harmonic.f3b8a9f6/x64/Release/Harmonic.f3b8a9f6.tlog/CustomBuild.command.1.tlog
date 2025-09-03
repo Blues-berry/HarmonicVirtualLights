@@ -1,0 +1,18 @@
+^C:\USERS\BLUESKY\DESKTOP\GRAPHIC\VKHARMONICSVIRTUALLIGHTS\HARMONICVIRTUALLIGHTS\RESOURCES\SHADERS\COMPUTESHADERS\POSTPROCESS.COMP
+glslangValidator -V C:\Users\Bluesky\Desktop\graphic\vkHarmonicsVirtualLights\HarmonicVirtualLights\Resources\Shaders\ComputeShaders\PostProcess.comp -o C:\Users\Bluesky\Desktop\graphic\vkHarmonicsVirtualLights\HarmonicVirtualLights\Resources\Shaders\PostProcess.comp.spv
+^C:\USERS\BLUESKY\DESKTOP\GRAPHIC\VKHARMONICSVIRTUALLIGHTS\HARMONICVIRTUALLIGHTS\RESOURCES\SHADERS\FRAGMENTSHADERS\DEFERREDGEOMSKYBOX.FRAG
+glslangValidator -V C:\Users\Bluesky\Desktop\graphic\vkHarmonicsVirtualLights\HarmonicVirtualLights\Resources\Shaders\FragmentShaders\DeferredGeomSkybox.frag -o C:\Users\Bluesky\Desktop\graphic\vkHarmonicsVirtualLights\HarmonicVirtualLights\Resources\Shaders\DeferredGeomSkybox.frag.spv
+^C:\USERS\BLUESKY\DESKTOP\GRAPHIC\VKHARMONICSVIRTUALLIGHTS\HARMONICVIRTUALLIGHTS\RESOURCES\SHADERS\VERTEXSHADERS\DEFERREDGEOMSKYBOX.VERT
+glslangValidator -V C:\Users\Bluesky\Desktop\graphic\vkHarmonicsVirtualLights\HarmonicVirtualLights\Resources\Shaders\VertexShaders\DeferredGeomSkybox.vert -o C:\Users\Bluesky\Desktop\graphic\vkHarmonicsVirtualLights\HarmonicVirtualLights\Resources\Shaders\DeferredGeomSkybox.vert.spv
+^C:\USERS\BLUESKY\DESKTOP\GRAPHIC\VKHARMONICSVIRTUALLIGHTS\HARMONICVIRTUALLIGHTS\RESOURCES\SHADERS\FRAGMENTSHADERS\RSM.FRAG
+glslangValidator -V C:\Users\Bluesky\Desktop\graphic\vkHarmonicsVirtualLights\HarmonicVirtualLights\Resources\Shaders\FragmentShaders\Rsm.frag -o C:\Users\Bluesky\Desktop\graphic\vkHarmonicsVirtualLights\HarmonicVirtualLights\Resources\Shaders\Rsm.frag.spv
+^C:\USERS\BLUESKY\DESKTOP\GRAPHIC\VKHARMONICSVIRTUALLIGHTS\HARMONICVIRTUALLIGHTS\RESOURCES\SHADERS\VERTEXSHADERS\RSM.VERT
+glslangValidator -V C:\Users\Bluesky\Desktop\graphic\vkHarmonicsVirtualLights\HarmonicVirtualLights\Resources\Shaders\VertexShaders\Rsm.vert -o C:\Users\Bluesky\Desktop\graphic\vkHarmonicsVirtualLights\HarmonicVirtualLights\Resources\Shaders\Rsm.vert.spv
+^C:\USERS\BLUESKY\DESKTOP\GRAPHIC\VKHARMONICSVIRTUALLIGHTS\HARMONICVIRTUALLIGHTS\RESOURCES\SHADERS\VERTEXSHADERS\SHADOWMAP.VERT
+glslangValidator -V C:\Users\Bluesky\Desktop\graphic\vkHarmonicsVirtualLights\HarmonicVirtualLights\Resources\Shaders\VertexShaders\ShadowMap.vert -o C:\Users\Bluesky\Desktop\graphic\vkHarmonicsVirtualLights\HarmonicVirtualLights\Resources\Shaders\ShadowMap.vert.spv
+^C:\USERS\BLUESKY\DESKTOP\GRAPHIC\VKHARMONICSVIRTUALLIGHTS\HARMONICVIRTUALLIGHTS\RESOURCES\SHADERS\VERTEXSHADERS\DEFERREDGEOM.VERT
+glslangValidator -V C:\Users\Bluesky\Desktop\graphic\vkHarmonicsVirtualLights\HarmonicVirtualLights\Resources\Shaders\VertexShaders\DeferredGeom.vert -o C:\Users\Bluesky\Desktop\graphic\vkHarmonicsVirtualLights\HarmonicVirtualLights\Resources\Shaders\DeferredGeom.vert.spv
+^C:\USERS\BLUESKY\DESKTOP\GRAPHIC\VKHARMONICSVIRTUALLIGHTS\HARMONICVIRTUALLIGHTS\RESOURCES\SHADERS\FRAGMENTSHADERS\DEFERREDGEOM.FRAG
+glslangValidator -V C:\Users\Bluesky\Desktop\graphic\vkHarmonicsVirtualLights\HarmonicVirtualLights\Resources\Shaders\FragmentShaders\DeferredGeom.frag -o C:\Users\Bluesky\Desktop\graphic\vkHarmonicsVirtualLights\HarmonicVirtualLights\Resources\Shaders\DeferredGeom.frag.spv
+^C:\USERS\BLUESKY\DESKTOP\GRAPHIC\VKHARMONICSVIRTUALLIGHTS\HARMONICVIRTUALLIGHTS\RESOURCES\SHADERS\COMPUTESHADERS\DEFERREDLIGHT.COMP
+glslangValidator -V C:\Users\Bluesky\Desktop\graphic\vkHarmonicsVirtualLights\HarmonicVirtualLights\Resources\Shaders\ComputeShaders\DeferredLight.comp -o C:\Users\Bluesky\Desktop\graphic\vkHarmonicsVirtualLights\HarmonicVirtualLights\Resources\Shaders\DeferredLight.comp.spv
