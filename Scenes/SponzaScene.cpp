@@ -112,11 +112,32 @@ void SponzaScene::init()
 	this->camera.setPosition(glm::vec3(6.0f, 1.0f, -0.15f));
 	this->camera.setRotation(-SMath::PI * 0.5f, -SMath::PI * 0.0f);
 
-	// Initial light setup
+	// Static lights setup
 	this->getRenderer().setSpotlightOrientation(
 		glm::vec3(2.0f, 1.0f, 0.0f),
 		glm::vec3(0.0f)
 	);
+	this->getRenderer().setSpotlightOrientation(
+		glm::vec3(-2.0f, 1.0f, 0.0f),
+		glm::vec3(0.0f)
+	);
+	this->getRenderer().setSpotlightOrientation(
+		glm::vec3(0.0f, 1.0f, 2.0f),
+		glm::vec3(0.0f)
+	);
+	this->getRenderer().setSpotlightOrientation(
+		glm::vec3(0.0f, 1.0f, -2.0f),
+		glm::vec3(0.0f)
+	);
+
+	// Light probes setup
+	this->getRenderer().addLightProbe(glm::vec3(1.0f, 1.0f, 1.0f));
+	this->getRenderer().addLightProbe(glm::vec3(-1.0f, 1.0f, 1.0f));
+	this->getRenderer().addLightProbe(glm::vec3(1.0f, 1.0f, -1.0f));
+	this->getRenderer().addLightProbe(glm::vec3(-1.0f, 1.0f, -1.0f));
+
+	// Spherical harmonics setup for indirect lighting
+	this->getRenderer().enableSphericalHarmonics(true);
 
 	// Camera setup for screenshot
 	/*this->camera.setPosition(glm::vec3(4.216015, 2.324934, -0.612709));

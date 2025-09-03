@@ -149,6 +149,8 @@ public:
 	void setWindow(Window& window);
 
 	void setSpotlightOrientation(const glm::vec3& position, const glm::vec3& lookAtPosition);
+	void addLightProbe(const glm::vec3& position);
+	void enableSphericalHarmonics(bool enable);
 
 	void startCleanup();
 	void cleanup();

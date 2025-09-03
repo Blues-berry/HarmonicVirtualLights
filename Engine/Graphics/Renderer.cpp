@@ -258,6 +258,17 @@ void Renderer::setSpotlightOrientation(const glm::vec3& position, const glm::vec
 	this->rsm.setOrientation(position, forwardDir);
 }
 
+void Renderer::addLightProbe(const glm::vec3& position)
+{
+	// TODO: Implement light probe logic
+	// This will capture spherical harmonics coefficients at the given position
+}
+
+void Renderer::enableSphericalHarmonics(bool enable)
+{
+	// TODO: Enable/disable spherical harmonics for indirect lighting
+}
+
 void Renderer::createCamUbo()
 {
 	this->uniformBuffer.createDynamicCpuBuffer(
@@ -279,7 +290,7 @@ void Renderer::addShCoefficients(
 		{
 			for (uint32_t n = 0; n < 3; ++n)
 			{
-				newShData.coefficients[k * 3 + n] = shCoeffs[j][k].rgb[n]; // R0 G0 B0 R1 G1 B1 R2 G2 B2
+				newShData.coefficients[k * 3 + n] = static_cast<float>(shCoeffs[j][k].rgb[n]); // R0 G0 B0 R1 G1 B1 R2 G2 B2
 			}
 		}
 
@@ -297,7 +308,7 @@ void Renderer::createShCoefficientBuffer(Scene& scene)
 	}
 
 	// For each BRDF data within a material
-	for (size_t i = 0; i < this->resourceManager->getNumBRDFs(); ++i)
+	for (uint32_t i = 0; i < static_cast<uint32_t>(this->resourceManager->getNumBRDFs()); ++i)
 	{
 		// R0, G0, B0, R1, G1, B1, RC0, GC0, BC0, RC1, GC1, BC1, ...
 		this->addShCoefficients(
@@ -311,7 +322,7 @@ void Renderer::createShCoefficientBuffer(Scene& scene)
 	}
 
 	// Create sh coefficient buffer
-	VkDeviceSize bufferSize = sizeof(shSets[0]) * shSets.size();
+	VkDeviceSize bufferSize = sizeof(shSets[0]) * static_cast<uint32_t>(shSets.size());
 	this->shCoefficientBuffer.createStaticGpuBuffer(
 		this->gfxAllocContext,
 		bufferSize,
